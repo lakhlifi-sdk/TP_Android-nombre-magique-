@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/RelativL"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="30dp"
+        android:text="Jeu le nombre magique"
+        android:textAlignment="center"
+        android:textCursorDrawable="@color/colorPrimary"
+        android:textSelectHandleLeft="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:id="@+id/textView1"
+        android:freezesText="true"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/textinputlayoutJoeur1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textView1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+    >
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/name1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Joueur 1">
+
+    </com.google.android.material.textfield.TextInputEditText>
+
+</com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textinputlayoutJoeur2"
+        android:layout_below="@+id/textinputlayoutJoeur1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        android:layout_marginBottom="30dp"
+      >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Joueur 2">
+
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textinputlayoutJoeur2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Jouer !!!"
+        android:id="@+id/jouer"
+        style="@style/RaiseButton"/>
+
+
+
+
+
+
+</RelativeLayout>
